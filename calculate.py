@@ -111,14 +111,11 @@ def get_color(value, maxvalue):
 	return f"#{hexval1:02X}{hexval2:02X}00"
 
 def generate_chart():
-	# generate_games_json()
+	generate_games_json()
 	with open(out_json, "r", encoding="utf-8") as f:
 		gamedata = json.loads(f.read())
 
 	maxprice = 40
-	# for game in gamedata:
-	# 	if game["price"] > maxprice:
-	# 		maxprice = game["price"]
 
 	x = []
 	y = []
